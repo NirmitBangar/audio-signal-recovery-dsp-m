@@ -138,7 +138,7 @@ STFT{x(t)} = ∫ x(τ) w(t - τ) e^(-j2πfτ) dτ
 
 ##  Results Visualization
 ### Noisy Signal (Time Domain)
-![Time](plots/time_signal.png)
+![Time](time_signal.png)
 
 ---
 
