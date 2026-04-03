@@ -143,22 +143,22 @@ STFT{x(t)} = ∫ x(τ) w(t - τ) e^(-j2πfτ) dτ
 ---
 
 ### Frequency Spectrum
-![FFT](plots/frequency_spectrum.png)
+![FFT](frequency_spectrum.png)
 
 ---
 
 ### Filtered Signal
-![Filtered](plots/filtered_signal.png)
+![Filtered](filtered_signal.png)
 
 ---
 
 ### Spectrogram Before Filtering
-![Before](plots/spectrogram_before.png)
+![Before](spectrogram_before.png)
 
 ---
 
 ### Spectrogram After Filtering
-![After](plots/spectrogram_after.png)
+![After](spectrogram_after.png)
 
 
 
