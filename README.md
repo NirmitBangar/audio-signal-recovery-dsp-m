@@ -137,29 +137,30 @@ STFT{x(t)} = ∫ x(τ) w(t - τ) e^(-j2πfτ) dτ
 ---
 
 ##  Results Visualization
-
-###  Noisy Signal (Time Domain)
-![Time](./plots/time_signal.png)
-
----
-
-###  Frequency Spectrum
-![FFT](./plots/frequency_spectrum.png)
+### Noisy Signal (Time Domain)
+![Time](plots/time_signal.png)
 
 ---
 
-###  Filtered Signal
-![Filtered](./plots/filtered_signal.png)
+### Frequency Spectrum
+![FFT](plots/frequency_spectrum.png)
 
 ---
 
-###  Spectrogram Before Filtering
-![Before](./plots/spectrogram_before.png)
+### Filtered Signal
+![Filtered](plots/filtered_signal.png)
 
 ---
 
-###  Spectrogram After Filtering
-![After](./plots/spectrogram_after.png)
+### Spectrogram Before Filtering
+![Before](plots/spectrogram_before.png)
+
+---
+
+### Spectrogram After Filtering
+![After](plots/spectrogram_after.png)
+
+
 
 ---
 
