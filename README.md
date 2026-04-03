@@ -17,9 +17,9 @@ x(t) = s(t) + n(t)
 
 Where:
 
-- x(t): observed noisy signal  
-- s(t): original clean signal  
-- n(t): additive noise (assumed stochastic, zero-mean)
+ x(t): observed noisy signal  
+ s(t): original clean signal  
+ n(t): additive noise (assumed stochastic, zero-mean)
 
 ---
 
@@ -41,8 +41,8 @@ X[k] = Σ x[n] e^(-j2πkn/N)
 
 Where:
 
-- N = number of samples  
-- k = frequency index  
+ N = number of samples  
+ k = frequency index  
 
 Efficiently computed using **Fast Fourier Transform (FFT)**:
 
@@ -72,8 +72,8 @@ We design a **Butterworth filter** due to its smooth frequency response.
 
 Where:
 
-- fc = cutoff frequency  
-- n = filter order  
+ fc = cutoff frequency  
+ n = filter order  
 
 ---
 
@@ -85,11 +85,11 @@ We define:
 
 ### Why?
 
-- Human speech lies in this band  
-- Noise typically spreads across full spectrum  
-- Removes:
-  - low-frequency drift  
-  - high-frequency noise  
+ Human speech lies in this band  
+  Noise typically spreads across full spectrum  
+  Removes:
+   low-frequency drift  
+   high-frequency noise  
 
 ---
 
@@ -101,8 +101,8 @@ Y(f) = H(f) · X(f)
 
 This acts as a selective mask:
 
-- Passband → retained  
-- Stopband → attenuated  
+Passband → retained  
+  Stopband → attenuated  
 
 ---
 
@@ -130,9 +130,9 @@ STFT{x(t)} = ∫ x(τ) w(t - τ) e^(-j2πfτ) dτ
 
 ### Interpretation:
 
-- X-axis → time  
-- Y-axis → frequency  
-- Color → magnitude  
+X-axis → time  
+  Y-axis → frequency  
+  Color → magnitude  
 
 ---
 
@@ -172,8 +172,8 @@ SNR = 10 log₁₀ (Ps / Pn)
 
 Where:
 
-- Ps = signal power  
-- Pn = noise power  
+ Ps = signal power  
+ Pn = noise power  
 
 ---
 
@@ -213,36 +213,36 @@ Pn = (1/N) Σ n[n]²
 
 ##  Implementation Details
 
-- Language: Python  
-- Libraries:
-  - NumPy → numerical computation  
-  - SciPy → signal processing  
-  - Matplotlib → visualization  
+ Language: Python  
+ Libraries:
+   NumPy → numerical computation  
+   SciPy → signal processing  
+   Matplotlib → visualization  
 
 ---
 
 ##  Assumptions
 
-- Noise is additive and uncorrelated  
-- Signal is band-limited  
-- System is linear and time-invariant (LTI)  
+ Noise is additive and uncorrelated  
+ Signal is band-limited  
+ System is linear and time-invariant (LTI)  
 
 ---
 
 ##  Limitations
 
-- Fixed filter band (not adaptive)  
-- Not suitable for non-stationary noise  
-- Phase distortion possible  
+ Fixed filter band (not adaptive)  
+ Not suitable for non-stationary noise  
+ Phase distortion possible  
 
 ---
 
 ##  Future Improvements
 
-- Adaptive filtering (LMS, RLS)  
-- Wavelet denoising  
-- Deep learning-based reconstruction  
-- Real-time processing  
+ Adaptive filtering (LMS, RLS)  
+ Wavelet denoising  
+ Deep learning-based reconstruction  
+ Real-time processing  
 
 ---
 
@@ -250,11 +250,11 @@ Pn = (1/N) Σ n[n]²
 
 This project demonstrates a **complete DSP pipeline**, combining:
 
-- Mathematical modeling  
-- Frequency-domain analysis  
-- Optimal filter design  
-- Time-frequency visualization  
-- Quantitative performance evaluation (SNR)  
+ Mathematical modeling  
+ Frequency-domain analysis  
+ Optimal filter design  
+ Time-frequency visualization  
+ Quantitative performance evaluation (SNR)  
 
 It highlights how **rigorous mathematical tools can recover meaningful signals from noisy environments**, a fundamental principle in communication systems, audio engineering, and signal intelligence.
 
