@@ -63,19 +63,19 @@ snr.txt
 ##  Results
 
 ### Noisy Signal
-![Time](plots/time_signal.png)
+![Time](./plots/time_signal.png)
 
 ### Frequency Spectrum
-![FFT](plots/frequency_spectrum.png)
+![FFT](./plots/frequency_spectrum.png)
 
 ### Filtered Signal
-![Filtered](plots/filtered_signal.png)
+![Filtered](./plots/filtered_signal.png)
 
 ### Spectrogram Before
-![Before](plots/spectrogram_before.png)
+![Before](./plots/spectrogram_before.png)
 
 ### Spectrogram After
-![After](plots/spectrogram_after.png)
+![After](./plots/spectrogram_after.png)
 
 ---
 
